@@ -1,0 +1,307 @@
+@import "https://fonts.googleapis.com/css2?family=Bangers&family=Ubuntu&display=swap";
+
+:root {
+    --color-green: #50fa7b;
+    --best-color: #7159c1;
+    --color-green-two: #44d033;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #282a36;
+    color: #fff;
+    font-family: Ubuntu, cursive;
+}
+
+header {
+    padding: 32px;
+    border-bottom: solid 1px #333;
+    background: rgba(0, 0, 0, .2);
+}
+
+/* === home === */
+
+.coluna {
+    text-align: center;
+}
+
+.home h1 {
+    font-size: 40px;
+    margin-bottom: 46px;
+}
+
+.apresentation {
+    max-width: 800px;
+    font-size: 25px;
+}
+
+.color {
+    color: var(--color-green)
+}
+
+
+/* === sobre === */
+
+.links {
+    text-align: center;
+}
+
+.links a,
+.principalia a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0px 18px;
+    line-height: 28px;
+    text-decoration: none;
+    transition: color .7s;
+}
+
+.links a:hover,
+.principalia a:hover {
+    color: var(--color-green);
+}
+
+.not-found,
+.raw {
+    width: 100vw;
+    min-height: calc(100vh - 93px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    padding: 32px;
+}
+
+.container img {
+    border-radius: 50%;
+    margin-bottom: 32px;
+    border: solid #fff;
+    width: 300px;
+}
+
+.container h1 {
+    font-size: 42px;
+    line-height: 52px;
+    font-family: Bangers;
+    letter-spacing: 4px;
+}
+
+.container h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 5px;
+    opacity: .8;
+}
+
+.container p {
+    max-width: 500px;
+    margin: 16px auto 0;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.container a {
+    color: var(--color-green);
+}
+
+#links-footer a {
+    border-bottom: solid 1px var(--color-green);
+    padding-bottom: 3px;
+}
+
+/* === cards === */
+
+.card,
+.card-thumb{
+    border-radius: 8px;
+}
+
+.card-thumb img {
+    border-radius: 8px 8px 0 0;
+}
+
+.cards {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-bottom: 32px;
+}
+
+.card {
+    background: var(--best-color);
+    cursor: pointer;
+    display: grid;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card-content,
+.card-info {
+    padding: 27px;
+}
+
+.card-info {
+    align-items: center;
+}
+
+.card-content p {
+    text-transform: capitalize;
+}
+
+.atention {
+    color: var(--color-green-two);
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-info p {
+    padding: 5px 0px;
+}
+
+.card-price {
+    background: var(--best-color);
+    filter: brightness(90%);
+    text-align: center;
+    border-radius: 20px
+}
+
+/* === featured === */
+
+.featured-daddy.card-thumb {
+    position: relative;
+}
+
+.featured {
+    background: var(--color-green);
+    color: #000;
+    position: absolute;
+    padding: 2px 8px;
+    border-radius: 22px;
+    top: -11px;
+    right: 5px;
+}
+
+/* === modal === */
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal {
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.close-modal {
+    color: #000;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    cursor: pointer;
+}
+
+/* === modal ativa === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+/* === not found === */
+
+.principalia {
+    text-align: center;
+    max-width: 800px;
+}
+
+.principalia img {
+    margin-bottom: 50px;
+}
+
+.principalia h1, .principalia a {
+    font-size: 26px;
+    margin: 0;
+}
+
+.principalia span {
+    margin-bottom: 0px;
+    display: block;
+    font-size: 40px;
+}
+
+.principalia a {
+    text-decoration: underline;
+}
+
+/* video page */
+
+.video {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.raw.video {
+    min-height: calc(100vh - 209px) !important;
+    align-items: baseline;
+}
+
+.raw.video .coluna {
+    width: 100%;
+    text-align: left;
+    font-size: 25px;
+    padding-top: 0;
+}
+
+.card-video {
+    position: relative;
+    padding-top: 80%;
+}
+
+.card-video iframe {
+    left: 0;
+    top: 0;
+    border-radius: 8px 8px 0 0;
+}
+
+.raw.video .card-info {
+    font-size: 20px;
+    padding: 5px 27px 33px;
+}
+
+.raw.video .card-content {
+    padding: 0 27px 36px;
+}
+

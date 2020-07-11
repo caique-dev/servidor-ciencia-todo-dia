@@ -1,0 +1,17 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Página não encontrada</title>
+{% endblock head %}
+
+{% block content %}
+    <div class="not-found">
+        <div class="principalia">
+            <img src="/assets/not-found.png">
+            <h1>
+                <span>{{ type }}</span> <br>
+                Reveja a URL ou tente novamente mais tarde. <br>
+            </h1>
+        </div>
+    </div>
+{% endblock content %}
